@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "target": "es5",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "removeComments": true,
+    "pretty": true,
+    "strictPropertyInitialization": true,
+    "typeRoots": [
+      "./typings",
+      "src/**/*.d.ts"
+    ],
+    "paths": {
+      "@ng-arthur/miniprogram": [
+        "./src"
+      ]
+    },
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "tools/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "miniprogram_dev",
+    "miniprogram_dist",
+    "**/*.spec.ts"
+  ]
+}

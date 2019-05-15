@@ -81,7 +81,9 @@ module.exports = {
     'semi': [
       'error',
       'never'
-    ]
+    ],
+    // "quotes": [1, "single"], //引号类型 `` "" ''
+    'quotes': ["error", "single", { "allowTemplateLiterals": true }]
   },
   'globals': {
     'window': true,

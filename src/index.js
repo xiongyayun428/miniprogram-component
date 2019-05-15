@@ -1,22 +1,2 @@
-Component({
-  properties: {
-    prop: {
-      type: String,
-      value: 'index.properties'
-    },
-  },
-  data: {
-    flag: false,
-  },
-  lifetimes: {
-    attached() {
-      wx.getSystemInfo({
-        success: () => {
-          this.setData({
-            flag: true,
-          })
-        }
-      })
-    }
-  }
-})
+export * from './http/index';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJQSxjQUFjLGNBQWMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2YgaHR0cFxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vaHR0cC9pbmRleCc7XG5cbi8vIGV4cG9ydCAqIGZyb20gJy4vaW5kZXgvaW5kZXgnO1xuIl19

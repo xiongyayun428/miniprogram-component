@@ -1,19 +1,22 @@
 {
   "name": "miniprogram-component",
   "version": "1.0.0",
-  "description": "",
+  "description": "微信小程序组件",
   "main": "miniprogram_dist/index.js",
   "scripts": {
-    "dev": "gulp dev --develop",
+    "dev": "npm run compile && gulp dev --develop",
     "watch": "gulp watch --develop --watch",
-    "build": "gulp",
+    "build": "npm run compile && gulp",
     "dist": "npm run build",
     "clean-dev": "gulp clean --develop",
     "clean": "gulp clean",
     "test": "jest ./test/* --silent --bail",
     "coverage": "jest ./test/* --coverage --bail",
     "lint": "eslint \"src/**/*.js\"",
-    "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\""
+    "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\"",
+    "compile": "./node_modules/typescript/bin/tsc",
+    "tswatch": "./node_modules/typescript/bin/tsc --watch",
+    "tsc": "node ./node_modules/typescript/lib/tsc.js"
   },
   "miniprogram": "miniprogram_dist",
   "jest": {
@@ -55,6 +58,7 @@
     "jest": "^23.5.0",
     "miniprogram-simulate": "^1.0.0",
     "through2": "^2.0.3",
+    "typescript": "^3.4.5",
     "vinyl": "^2.2.0",
     "webpack": "^4.29.5",
     "webpack-node-externals": "^1.7.2"
